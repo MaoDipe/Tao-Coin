@@ -1,0 +1,262 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Tasks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="material/css/styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+
+    /* เพิ่มภาพพื้นหลัง */
+    background-image: url('material/images/05.jpg');
+    background-size: cover; /* ปรับให้ภาพเต็มจอ */
+    background-position: center; /* จัดให้อยู่ตรงกลาง */
+    background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+    background-attachment: fixed; /* ทำให้ภาพพื้นหลังคงที่ขณะเลื่อนหน้า */
+}
+
+        #balance-container {
+            margin: 20px;
+            font-size: 18px;
+        }
+
+        .task-container {
+            margin: 10px auto;
+            max-width: 600px;
+        }
+
+        .task {
+            margin: 10px auto;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #000000; 
+            border-radius: 12px;
+            background-color: #333030; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            width: 80%;
+        }
+
+        .task:hover {
+            transform: translateY(-5px);
+        }
+
+        .task-detail {
+            display: flex;
+            align-items: center;
+        }
+
+        .task-image img {
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+
+        .task h4 {
+            margin: 0;
+            font-size: 18px;
+            color: #f2f2f2;
+        }
+
+        .task-data {
+            display: flex;
+            align-items: center;
+            margin-top: 8px;
+        }
+
+        .task-data img {
+            margin-right: 5px;
+        }
+
+        .task-data h5 {
+            margin: 0;
+            color: #ffcc00;
+            font-size: 18px;
+        }
+
+        .task-button {
+            background-color: #ffffff; 
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .task-button:hover {
+            background-color: #a2aaa0;
+        }
+
+        @media (max-width: 600px) {
+            .task-container {
+                max-width: 100%;
+            }
+
+            .task-button {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+
+            .task h4 {
+                font-size: 16px;
+            }
+        }
+		
+		
+		
+		
+		
+    </style>
+	
+	
+	
+	
+	
+	<style>
+          .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            
+            padding: 0px;
+            border-radius: 0px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .countdown div {
+            background: #6c48ec;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+	
+        }
+		
+		
+		
+	 .referral-link {
+    background: #e6e4ff;
+    width: 70%;
+    padding: 4px;
+    border-radius: 200px;
+    text-align: center;
+    margin: 0 auto; /* ทำให้อยู่ตรงกลางแนวนอน */
+    word-wrap: break-word;
+    font-size: 0.9em;
+    color: #6c48ec;
+    border: 1px solid #d0cfff;
+	
+}
+
+
+        button {
+            background: #6c48ec;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #5739c0;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .action-buttons button {
+            background: #6c48ec;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 15px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .action-buttons button:hover {
+            background: #5739c0;
+        }	
+		
+		
+		
+		
+		
+		
+		
+</style>
+	
+	
+	
+	
+	
+<style>#dexscreener-embed{position:relative;width:100%;padding-bottom:125%;}@media(min-width:1400px){#dexscreener-embed{padding-bottom:65%;}}#dexscreener-embed iframe{position:absolute;width:100%;height:100%;top:0;left:0;border:0;}</style>  
+	
+
+	
+	
+	
+	
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+  
+<div id="dexscreener-embed"><iframe src="https://dexscreener.com/ton/EQB5pYATwl8wjklb8-brFE2pGKYLqrn8H6ePKOskK3bBEwR3?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTimeframesToolbar=0&loadChartSettings=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=60"></iframe></div>		
+		
+		
+		
+		
+
+		
+		
+		
+		<br>
+		
+		
+		
+        <div class="action-buttons">
+		<a href="home.html"> <button>Home</button>
+           <a href="https://dedust.io/swap/TON/EQB76x6QTODEyoUFGPVSB15cNOCsBqh7zuHaE812vLfEtDxz?amount=1000000000"> <button>Swap</button>
+           
+        </div>
+    </div>
+	
+		
+		
+		
+		
+		
+
+
+  <script src="assets/js/cojs.js"></script>
+    
+</body>
+</html>

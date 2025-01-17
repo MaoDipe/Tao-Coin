@@ -20,7 +20,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: url('material/images/loading.gif') no-repeat center center fixed; 
+            background: url('material/images/14.gif') no-repeat center center fixed; 
             background-size: cover; 
             color: white;
             text-align: center;
@@ -32,15 +32,7 @@
             margin: 0;
         }
         
-        .spinner {
-            border: 8px solid rgba(255, 255, 255, 0.1);
-            border-left: 8px solid #d5d7dd; 
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin-top: 20px;
-        }
+        
         
         @keyframes spin {
             0% { transform: rotate(0deg); }
@@ -51,7 +43,7 @@
 <body>
     <div class="loading-container">
         <div>
-            <h1>Loading...</h1>
+            <h1></h1>
             <div class="spinner"></div>
         </div>
     </div>
@@ -60,7 +52,7 @@
        
         setTimeout(function() {
             window.location.href = 'home.html'; 
-        }, 5000);
+        }, 7000);
     </script>
 </body>
 </html>
